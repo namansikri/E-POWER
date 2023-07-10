@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>E-Power_Micron Hack</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="../static/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="../static/css/stylish-portfolio.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+
+  <!-- Header
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">E-Power</h1>
+      <h3 class="mb-5">
+        <em>Finding out the Optimal Depolyment Location of EVCS</em>
+      </h3>
+    </div>
+    <div class="overlay"></div>
+  </header>-->
+
+
+
+     <!-- Try Section -->
+
+    <section class="bg-primary mb-0" id="try">
+      <div class="container">
+        <hr class="star-light mb-5">
+        <div class="container text-center my-auto">
+      <h1 class="mb-1">E-Power</h1>
+      <h3 class="mb-5">
+        <em>Finding out the Optimal Depolyment Location of EVCS</em>
+      </h3>
+    </div>
+      <!--<h5> EVPR = Electric Vehicle Penetration Ratio (how many are ?) </h5>
+        <h5> HCR = Home Charging Ratio (how many of them get charged at Home?) </h5> 
+        <hr class="star-light mb-5">-->
+              <div class="col-sm m-3 text-center">
+                    <form action="/output" method="POST" id="user_input"> 
+                      
+
+
+                      
+                      <h4> Point of Interest </h4>
+                          
+<input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">Pumps-Stations</label>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="op2">Parking Lots</label>
+  <input type="radio" id="op3" name="fav_language" value="op3">
+  <label for="op3">Others</label>
+                          
+                     
+                    <div>   <h4>Area Type</h4>
+  <input type="radio" id="html" name="fav_lang" value="HTML">
+  <label for="html">Urban</label>
+  <input type="radio" id="css" name="fav_lang" value="CSS">
+  <label for="css">Rural</label><br>
+</div>
+<div style="width: 100%;">
+                      <h4>No. of EVs out there </h4>
+                          <div class="slidecontainer">
+                              <input type="range" min="0" max="100000" step = "1" value="1" class="slider" id="myRange1", name="slider1">
+                               <p>Value: <span id="demo1"></span></p>
+                          </div>
+                      </div>
+                      
+<div><h4>Traffic on Route</h4>
+  <input type="radio" id="html" name="fav" value="HTML">
+  <label for="html">High</label>
+  <input type="radio" id="css" name="fav" value="CSS">
+  <label for="css">Moderate</label>
+  <input type="radio" id="op3" name="fav" value="op3">
+  <label for="op3">Low</label>
+<h4>City Region</h4>
+  <input type="radio" id="html" name="language" value="HTML">
+  <label for="html">Inner City</label>
+  <input type="radio" id="css" name="language" value="CSS">
+  <label for="css">Highway</label><br>
+<h4>Type of Charging Station</h4>
+  <input type="radio" id="html" name="lang" value="HTML">
+  <label for="html">Battery Swapping</label>
+<input type="radio" id="html" name="lang" value="HTML">
+  <label for="html">Normal Charging</label>
+  <input type="radio" id="css" name="lang" value="CSS">
+  <label for="css">Rapid Charging</label><br>
+  <label for="cars"><h4>Distance from other Stations(in km)</h4></label>
+  <select name="cars" id="cars">
+    <option value="">0-20</option>
+    <option value="saab">21-40</option>
+    <option value="opel">41-60</option>
+    <option value="audi">>60</option>
+  </select>
+  <br>
+                  <div style="width: 100%;">
+                      <h4>Percentage of Renewable Energy</h4>
+                          <div class="slidecontainer">
+                              <input type="range" min="0" max="100" step = "0.1" value="0" class="slider" id="myRange2", name="slider2">
+                               <p>Value: <span id="demo2"></span></p>
+
+                          </div>
+                      </div> 
+      <!--                 <div style="width: 100%;">
+                        <label for="fname"><h4>Percentage of Fossil fuels Imported</h4></label>
+  <input type="text" id="fname" name="fname" value=""><br>
+</div> -->
+ </div>
+                      
+                    </form>
+                         <div class="row justify-content-center">
+             <!-- <button type="submit" class="btn btn-secondary btn-lg" form="user_input">Finding Optimal Spot!</button> -->
+             <a class="btn btn-secondary btn-lg" href="file:///D:/E-POWER%20MICRON%20HACK/E-Power%20Optimal%20Locations/algorithm_code/Optimal%20Locations%20on%20Map/index.html">Finding Optimal Locations on Map!</a>
+      </div>
+ 
+              </div>
+      
+       <!--  <div class="row mt-4 justify-content-center">
+          <h2 class="text-light text-center text-uppercase">Get Optimal Locations of New Charging Stations </h2>
+        
+        </div> -->
+
+
+      </div>
+    </section>
+
+  
+    
+
+<script>
+var slider1 = document.getElementById("myRange1");
+var output1 = document.getElementById("demo1");
+output1.innerHTML = slider1.value;
+var slider2 = document.getElementById("myRange2");
+var output2 = document.getElementById("demo2");
+output2.innerHTML = slider2.value;
+slider1.oninput = function() {
+  output1.innerHTML = this.value;
+}
+slider2.oninput = function() {
+  output2.innerHTML = this.value;
+}
+
+</script>
+    
+
+        <!-- Bootstrap core  -->
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin op3 -->
+    <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../static/js/stylish-portfolio.min.js"></script>
+  </body>
+
+
+</html>
