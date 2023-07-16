@@ -1,6 +1,5 @@
 # E-POWER : Optimal Deployment of Electric Vehicles & Charging Stations
 
-# MICRON SMAI HACK 2022 National Finalists
 E-POWER is an optimization tool to choose the optimal location for EVs Charging Stations. And help owners to reach Charging Stations and mingle with eco-friendly world
 
 Take all points of interest (Petrol pumps, CNG stations, parking lots, shopping complexes, etc)
